@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2 } from "../StyledComponents";
 import { useEffect } from "react";
+import programmingImg from "../assets/programmng-languages.jpg";
 
 export default function Skills() {
 
@@ -17,7 +18,7 @@ export default function Skills() {
                 <Nav />
                 <StyledMain>
                     <StyledH2>Skills</StyledH2>
-                    <img src="../public/programmng-languages.jpg" alt="Programming Languages" />
+                    <img src={programmingImg} alt="Programming Languages" />
                     <ResumeItemDiv>
                         <h3>Programming Languages</h3>
                         <p>Python | Java | JavaScript | C | HTML | CSS | SQL</p>

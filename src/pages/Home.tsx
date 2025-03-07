@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import styled from "styled-components";
 import { ContentDiv, StyledMain, StyledH2 } from "../StyledComponents";
 import { useEffect } from "react";
+import headshot from "../assets/headshot.jpg";
 
 const StyledDiv = styled.div`
     display: flex;
@@ -34,7 +35,7 @@ export default function Home() {
                 <StyledMain>
                     <StyledH2>Home</StyledH2>
                     <StyledDiv>
-                        <StyledImg src="../public/headshot.jpg" alt="Sadid Ethun" />
+                        <StyledImg src={headshot} alt="Sadid Ethun" />
                         <p>
                             Hi, my name is Sadid Ethun. I am a currently a junior studying Computer Science at Boston
                             Univeristy.

@@ -39,7 +39,7 @@ const StyledLi = styled.li`
 
 const StyledLink = styled(Link)`
     display: flex;
-    font-size: calc(4px + 1vw);
+    font-size: calc(4px + 1.5vw);
     background-color: #202020;
     width: 90%;
     padding: 5%;
@@ -49,6 +49,8 @@ const StyledLink = styled(Link)`
 
     @media screen and (max-width: 750px) {
         justify-content: center;
+        font-size: calc(4px + 1vw);
+        width: 100%;
     }
 `;
 

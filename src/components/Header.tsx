@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { StyledH1, StyledP } from "../StyledComponents";
 
 const StyledHeader = styled.header`
     display: flex;
@@ -21,8 +22,8 @@ export default function Header() {
     return (
         <StyledHeader>
             <StyledDiv>
-                <h1>Sadid Ethun</h1>
-                <p>My Online Resume</p>
+                <StyledH1>Sadid Ethun</StyledH1>
+                <StyledP>My Online Resume</StyledP>
             </StyledDiv>
         </StyledHeader>
     );

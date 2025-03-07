@@ -7,7 +7,7 @@ export const StyledMain = styled.main`
     background-color: #202020;
 
     @media screen and (max-width: 750px) {
-        width: 94%;
+        width: 100%;
     }
 `;
 
@@ -41,4 +41,44 @@ export const ResumeItemDiv = styled.div`
 
 export const DescriptionP = styled.p`
     margin-top: 3%;
+    font-size: calc(4px + 1vw);
+`;
+
+export const StyledH1 = styled.h1`
+    margin: 0;
+    font-size: calc(4px + 2vw);
+    font-weight: 500;
+`;
+
+export const StyledH3 = styled.h3`
+    margin: 0;
+    font-size: calc(4px + 1.25vw);
+    font-weight: 500;
+`;
+
+export const StyledP = styled.p`
+    font-size: calc(4px + 1vw);
+    margin: 0;
+`;
+
+export const StyledA = styled.a`
+    text-decoration: none;
+    margin: 0;
+    font-size: calc(4px + 1vw);
+    color: #00acfb;
+`;
+
+export const StyledUl = styled.ul`
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+`;
+
+export const StyledLi = styled.li`
+    font-size: calc(4px + 1vw);
+`;
+
+export const StyledImg = styled.img`
+    width: 100%;
+    margin: 0 3% 3% 0;
 `;

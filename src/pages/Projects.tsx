@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, DescriptionP } from "../StyledComponents";
+import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, DescriptionP, StyledH3, StyledP } from "../StyledComponents";
 import Calculator from "../components/Calculator";
 import { useEffect } from "react";
 
@@ -19,8 +19,8 @@ export default function Projects() {
                 <StyledMain>
                     <StyledH2>Projects</StyledH2>
                     <ResumeItemDiv>
-                        <h3>Pantry</h3>
-                        <p><em>September 2024 – Present</em></p>
+                        <StyledH3>Pantry</StyledH3>
+                        <StyledP><em>September 2024 – Present</em></StyledP>
                         <DescriptionP>
                             Created a full-stack web application using Apache, Python, and SQL, integrating
                             the Yelp API to provide personalized restaurant recommendations and food recipes based on
@@ -30,8 +30,8 @@ export default function Projects() {
                         </DescriptionP>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Call Assist</h3>
-                        <p><em>January 2023 – June 2024</em></p>
+                        <StyledH3>Call Assist</StyledH3>
+                        <StyledP><em>January 2023 – June 2024</em></StyledP>
                         <DescriptionP>
                             Developed a mobile app using React Native and MongoDB to automate phone calls and bypass virtual
                             receptionists, leveraging the Twilio API for speech-to-text transcription and automated response

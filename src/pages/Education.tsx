@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2 } from "../StyledComponents";
+import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, StyledH3, StyledP, StyledUl, StyledLi } from "../StyledComponents";
 import styled from "styled-components";
 import { useEffect } from "react";
 
@@ -25,27 +25,26 @@ export default function Education() {
                 <StyledMain>
                     <StyledH2>Education</StyledH2>
                     <ResumeItemDiv>
-                        <h3>Boston University | Boston, MA</h3>
-                        <p></p>
-                        <p><em>BA/MS in Computer Science</em></p>
-                        <p>Class of 2026</p>
+                        <StyledH3>Boston University | Boston, MA</StyledH3>
+                        <StyledP><em>BA/MS in Computer Science</em></StyledP>
+                        <StyledP>Class of 2026</StyledP>
                         <StyledDiv>
-                            <p><strong>Coursework:</strong></p>
-                            <ul>
-                                <li>Data Structures and Algorithms</li>
-                                <li>Linear Algebra</li>
-                                <li>Discrete Mathematics</li>
-                                <li>Computer Systems</li>
-                                <li>Probability</li>
-                                <li>Software Engineering</li>
-                                <li>Machine Learning</li>
-                            </ul>
+                            <StyledP><strong>Coursework:</strong></StyledP>
+                            <StyledUl>
+                                <StyledLi>Data Structures and Algorithms</StyledLi>
+                                <StyledLi>Linear Algebra</StyledLi>
+                                <StyledLi>Discrete Mathematics</StyledLi>
+                                <StyledLi>Computer Systems</StyledLi>
+                                <StyledLi>Probability</StyledLi>
+                                <StyledLi>Software Engineering</StyledLi>
+                                <StyledLi>Machine Learning</StyledLi>
+                            </StyledUl>
                         </StyledDiv>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Stuyvesant High School | New York, NY</h3>
-                        <p><em>High School Diploma</em></p>
-                        <p>Class of 2022</p>
+                        <StyledH3>Stuyvesant High School | New York, NY</StyledH3>
+                        <StyledP><em>High School Diploma</em></StyledP>
+                        <StyledP>Class of 2022</StyledP>
                     </ResumeItemDiv>
                 </StyledMain>
             </ContentDiv>

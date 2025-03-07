@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2 } from "../StyledComponents";
+import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, StyledImg, StyledH3, StyledP } from "../StyledComponents";
 import { useEffect } from "react";
 import programmingImg from "../assets/programmng-languages.jpg";
 
@@ -18,18 +18,18 @@ export default function Skills() {
                 <Nav />
                 <StyledMain>
                     <StyledH2>Skills</StyledH2>
-                    <img src={programmingImg} alt="Programming Languages" />
+                    <StyledImg src={programmingImg} alt="Programming Languages" />
                     <ResumeItemDiv>
-                        <h3>Programming Languages</h3>
-                        <p>Python | Java | JavaScript | C | HTML | CSS | SQL</p>
+                        <StyledH3>Programming Languages</StyledH3>
+                        <StyledP>Python | Java | JavaScript | C | HTML | CSS | SQL</StyledP>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Frameworks</h3>
-                        <p>React | Next.js | React Native | Node.js | Flask | Apache</p>
+                        <StyledH3>Frameworks</StyledH3>
+                        <StyledP>React | Next.js | React Native | Node.js | Flask | Apache</StyledP>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Developer Tools</h3>
-                        <p>Git | AWS Amplify | AWS Cognito | AWS DynamoDB | Firebase | MongoDB</p>
+                        <StyledH3>Developer Tools</StyledH3>
+                        <StyledP>Git | AWS Amplify | AWS Cognito | AWS DynamoDB | Firebase | MongoDB</StyledP>
                     </ResumeItemDiv>
                 </StyledMain>
             </ContentDiv>

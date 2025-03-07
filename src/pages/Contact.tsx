@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2 } from "../StyledComponents";
+import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, StyledH3, StyledP } from "../StyledComponents";
 import styled from "styled-components";
 import { useEffect } from "react";
 
@@ -13,10 +13,25 @@ const StyledTable = styled.table`
 
 const StyledTh = styled.th`
     background-color: #2b3c5d;
+    text-align: left;
+    font-size: calc(4px + 1vw);
+    border: #101010 1px solid;
+    padding: 1%;
 `;
 
 const StyledTd = styled.td`
     background-color: #303030;
+    text-align: left;
+    font-size: calc(4px + 1vw);
+    border: #101010 1px solid;
+    padding: 1%;
+`;
+
+export const StyledTr = styled.tr`
+    text-align: left;
+    font-size: calc(4px + 1vw);
+    border: #101010 1px solid;
+    padding: 1%;
 `;
 
 export default function Contact() {
@@ -33,39 +48,39 @@ export default function Contact() {
                 <StyledMain>
                     <StyledH2>Contact</StyledH2>
                     <ResumeItemDiv>
-                        <h3>Email</h3>
-                        <p>sethun@bu.edu</p>
+                        <StyledH3>Email</StyledH3>
+                        <StyledP>sethun@bu.edu</StyledP>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Phone</h3>
-                        <p>(123) 456-7890</p>
+                        <StyledH3>Phone</StyledH3>
+                        <StyledP>(123) 456-7890</StyledP>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Address</h3>
+                        <StyledH3>Address</StyledH3>
                         <p>1234 5th Ave, New York, NY 10001</p>
                     </ResumeItemDiv>
                     <div>
                         <StyledTable>
-                            <tr>
+                            <StyledTr>
                                 <StyledTh>Name</StyledTh>
                                 <StyledTh>Email</StyledTh>
                                 <StyledTh>Phone</StyledTh>
-                            </tr>
-                            <tr>
+                            </StyledTr>
+                            <StyledTr>
                                 <StyledTd>Mother</StyledTd>
                                 <StyledTd>mother@gmail.com</StyledTd>
                                 <StyledTd>(123) 456-7891</StyledTd>
-                            </tr>
-                            <tr>
+                            </StyledTr>
+                            <StyledTr>
                                 <StyledTd>Father</StyledTd>
                                 <StyledTd>father@gmail.com</StyledTd>
                                 <StyledTd>(123) 456-7892</StyledTd>
-                            </tr>
-                            <tr>
+                            </StyledTr>
+                            <StyledTr>
                                 <StyledTd>Sister</StyledTd>
                                 <StyledTd>sister@gmail.com</StyledTd>
                                 <StyledTd>(123) 456-7893</StyledTd>
-                            </tr>
+                            </StyledTr>
                         </StyledTable>
                     </div>
                 </StyledMain>

@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, DescriptionP } from "../StyledComponents";
+import { ContentDiv, ResumeItemDiv, StyledMain, StyledH2, DescriptionP, StyledH3, StyledP } from "../StyledComponents";
 import { useEffect } from "react";
 
 export default function Experience() {
@@ -18,8 +18,8 @@ export default function Experience() {
                 <StyledMain>
                     <StyledH2>Experience</StyledH2>
                     <ResumeItemDiv>
-                        <h3>Hack4Impact | Boston, MA</h3>
-                        <p><em>Software Engineer</em> | <em>September 2024 – Present</em></p>
+                        <StyledH3>Hack4Impact | Boston, MA</StyledH3>
+                        <StyledP><em>Software Engineer</em> | <em>September 2024 – Present</em></StyledP>
                         <DescriptionP>Redesigned and rebuilt the Boston University CGSA website with React
                             to enhance user experience and
                             accessibility.
@@ -33,8 +33,8 @@ export default function Experience() {
                         </DescriptionP>
                     </ResumeItemDiv>
                     <ResumeItemDiv>
-                        <h3>Niura | New York, MA</h3>
-                        <p><em>Software Engineer</em> | <em>May 2024 – September 2024</em></p>
+                        <StyledH3>Niura | New York, MA</StyledH3>
+                        <StyledP><em>Software Engineer</em> | <em>May 2024 – September 2024</em></StyledP>
                         <DescriptionP>Designed and developed a mobile app with React Native and Expo,
                             enabling interaction with
                             EEG-measuring earbuds that provide users with' stress and focus data to facilitate productivity.

@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import styled from 'styled-components';
+import { StyledP } from '../StyledComponents';
 
 const StyledFooter = styled.footer`
     background-color: #2b3c5d;
@@ -10,7 +11,7 @@ export default function Footer() {
 
     return (
         <StyledFooter>
-            <p>All Rights Reserved by Sadid Ethun <Link to={``}>Credits</Link> &copy;</p>
+            <StyledP>All Rights Reserved by Sadid Ethun <Link to={``}>Credits</Link> &copy;</StyledP>
         </StyledFooter>
     );
 

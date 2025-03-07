@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyledH2 } from "../StyledComponents";
+import { StyledH2, StyledP } from "../StyledComponents";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
@@ -120,7 +120,7 @@ export default function Calculator() {
                     <StyledButton onClick={myClear}>Clear</StyledButton>
                 </ButtonDiv>
                 <div>
-                    <p>Output</p>
+                    <StyledP>Output</StyledP>
                     <StyledH3 style={{ color: output < 0 ? "red" : "white" }}>{output}</StyledH3>
                 </div>
             </StyledDiv>

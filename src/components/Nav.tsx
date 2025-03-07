@@ -29,7 +29,9 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-    @media screen and (max-width: 750px) {}
+    list-style-type: none;
+
+    @media screen and (max-width: 750px) {
         display: flex;
         width: 100%;
     }
@@ -37,12 +39,17 @@ const StyledLi = styled.li`
 
 const StyledLink = styled(Link)`
     display: flex;
-    font-size: calc(4px + 1.5vw);
+    font-size: calc(4px + 1vw);
     background-color: #202020;
     width: 90%;
     padding: 5%;
     border-radius: 1vw;
     color: #f0f0f0;
+    text-decoration: none;
+
+    @media screen and (max-width: 750px) {
+        justify-content: center;
+    }
 `;
 
 

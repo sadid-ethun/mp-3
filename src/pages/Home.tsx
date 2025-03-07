@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
 
 const StyledImg = styled.img`
     width: 50%;
-    margin-right: 3%;
+    margin: 3%;
 `;
 
 export default function Home() {

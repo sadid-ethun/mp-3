@@ -55,20 +55,6 @@ const StyledH3 = styled.h3`
     align-items: center;
 `;
 
-const NegativeOutput = styled.h3`
-    margin-top: 1%;
-    font-size: calc(4px + 1.5vw);
-    font-weight: 500;
-    background-color: #404040;
-    width: 50%;
-    padding: 0.5vw 1.5vw;
-    border-radius: 100vw;
-    height: calc(4px + 2vw);
-    display: flex;
-    align-items: center;
-    color: red;
-`;
-
 export default function Calculator() {
 
     const [firstNumber, setFirstNumber] = useState(0);
@@ -135,7 +121,7 @@ export default function Calculator() {
                 </ButtonDiv>
                 <div>
                     <p>Output</p>
-                    {output < 0 ? <NegativeOutput>{output}</NegativeOutput> : <StyledH3>{output}</StyledH3>}
+                    <StyledH3 style={{ color: output < 0 ? "red" : "white" }}>{output}</StyledH3>
                 </div>
             </StyledDiv>
         </>
